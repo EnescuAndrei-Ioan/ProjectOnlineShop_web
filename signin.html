@@ -19,8 +19,7 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/register.css" />
 
-    <!--=============== JS ===============-->
-    <script src="js/signup.js"></script>
+  <script src="js/signin.js"></script> 
 
     <title>Switchers</title>
   </head>
@@ -48,11 +47,11 @@
             </li>
 
             <li class="nav__item">
-              <a href="register.html" target="_blank" class="nav__link active-link" >Register</a>
+              <a href="register.html" target="_blank" class="nav__link" >Register</a>
             </li>
 
             <li class="nav__item">
-              <a href="signin.html" target="_blank" class="nav__link" >Sign In</a>
+              <a href="signin.html" target="_blank" class="nav__link active-link" >Sign In</a>
             </li>
 
             <a href="/index.html" class="button button--cart">Cart</a>
@@ -69,56 +68,19 @@
 
     <main class="main">
       
-          <!--==================== Register ====================-->
+          <!--==================== SIGN IN====================-->
       <form>  
         <div class="nav"></div>
         <div class="container">  
-        <h1> Register </h1> 
-        <hr>  
-        <label> Firstname </label>   
-      <input type="text" id="firstName" placeholder= "Firstname" size="15" required />   
-      <label> Middlename*: </label>   
-      <input type="text" id="middleName"  placeholder="Middlename" size="15" />   
-      <label> Lastname: </label>    
-      <input type="text" id="lastName" placeholder="Lastname" size="15"required />   
-      <div>  
-      <label>   
-      What you want to be:  
-      </label>   
-        
-      <select>  
-      <option value="Buyer" id="type">Buyer</option>  
-      <option value="Seller" id="type">Seller</option>   
-      </select>  
-      </div>  
-      <div>  
-      <label>   
-      Gender :  
-      </label><br>  
-      <input type="radio" value="Male"  id="gender" > Male   
-      <input type="radio" value="Female" id="gender" > Female   
-      <input type="radio" value="Other" id="gender" > Don't know bro 
-      
-      <br />
-      </div>  
-      <label>   
-      Phone :  
-      </label>  
-      <input type="text" id="countryCode" placeholder="Country Code"  value="+40" size="2"/>   
-      <input type="text" id="phone" placeholder="phone no." size="10" required>   
-      <br />
-      <label for="adress">Adress*:</label>  
-      <input type="text" placeholder="Enter adress" id="adress" size="80"> 
-      <br />
-      <label for="email">Email:</label>  
+        <h1> Sign In </h1> 
+        <hr> 
+      <label for="email">Email:</label> <br> 
       <input type="text" placeholder="Enter email" id="email" required>  
       <br />
-      <label for="password">Password</label>  <br />
+      <label for="password">Password</label> <br />
       <input type="password" placeholder="Enter Password" id="password" required>  
-      <br />
-      <label for="password-repeat">Re-type Password</label>  <br />
-      <input type="password" placeholder="Retype Password" id="passwordRepeat" required>  
-      <br /><button onclick="createAccount()">Create account</button> 
+      <br /> 
+      <br /><button onclick="signin()">Sign in</button>    
       </form> 
   
     <!--==================== FOOTER ====================-->
